@@ -3,11 +3,11 @@
 
 <head>
     <title>Test Data Generator Documentation</title>
-    <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon'/ >
+    <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon' />
     <meta charset="utf-8">
-
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/pdfContent.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,13 @@
             </nav>
         </div>
         <div id="content">
-            <!-- The content goes here -->
+            <div id="pdfContentDiv">
+                <object data="assets/report.pdf" type="application/pdf">
+                    <!-- #zoom=scale&amp;toolbar=1&amp;navpanes=0&amp;scrollbar=1&amp;page=1&amp;view=FitV -->
+                    <p>It appears you don't have PDF support in this web browser. <a href="assets/report.pdf">Click here to download the PDF</a>
+                    </p>
+                </object>
+            </div>
         </div>
         <div id="footer">
             <div class="footer" role="contentinfo">
@@ -43,6 +49,7 @@
             </div>
         </div>
     </div>
+    <script src="js/pdfContent.js"></script>
 </body>
 
 </html>
