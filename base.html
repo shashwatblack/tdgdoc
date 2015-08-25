@@ -5,8 +5,9 @@
     <title>Test Data Generator Documentation</title>
     <link rel='shortcut icon' href='images/favicon.png' type='image/x-icon'/ >
     <meta charset="utf-8">
-    
+
     <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/pdfContent.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                         <ul class="nav">
                             <li id="nav-home"><a href="#">Home</a></li>
                             <li id="nav-members"><a href="#">Members</a></li>
-                            <li id="nav-documentation"><a href="documentation.html">User Documentation</a></li>
-                            <li id="nav-report"><a href="report.html">Project Report</a></li>
+                            <li id="nav-documentation"><a href="#documentation" onclick="loadDocumentation()">User Documentation</a></li>
+                            <li id="nav-report"><a href="#report" onclick="loadReport()">Project Report</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,6 +43,7 @@
             </div>
         </div>
     </div>
+    <script src="js/base.js"></script>
 </body>
 
 </html>
